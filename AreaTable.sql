@@ -1,8 +1,8 @@
 DROP TABLE IF EXISTS `areatable`;
 
 CREATE TABLE `areatable` (
-  `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `areaname` varchar(100) NOT NULL DEFAULT '',
+  `entry` mediumint(8) NOT NULL,
+  `areaname` text,
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 

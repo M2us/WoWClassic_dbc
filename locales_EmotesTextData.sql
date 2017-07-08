@@ -1,15 +1,15 @@
 DROP TABLE IF EXISTS `locales_emotestextdata`;
 
 CREATE TABLE `locales_emotestextdata` (
-  `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `chattext_loc1` varchar(100) NOT NULL DEFAULT '',
-  `chattext_loc2` varchar(100) NOT NULL DEFAULT '',
-  `chattext_loc3` varchar(100) NOT NULL DEFAULT '',
-  `chattext_loc4` varchar(100) NOT NULL DEFAULT '',
-  `chattext_loc5` varchar(100) NOT NULL DEFAULT '',
-  `chattext_loc6` varchar(100) NOT NULL DEFAULT '',
-  `chattext_loc7` varchar(100) NOT NULL DEFAULT '',
-  `chattext_loc8` varchar(100) NOT NULL DEFAULT '',
+  `entry` mediumint(8) NOT NULL,
+  `chattext_loc1` text,
+  `chattext_loc2` text,
+  `chattext_loc3` text,
+  `chattext_loc4` text,
+  `chattext_loc5` text,
+  `chattext_loc6` text,
+  `chattext_loc7` text,
+  `chattext_loc8` text,
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 

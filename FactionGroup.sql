@@ -1,8 +1,8 @@
 DROP TABLE IF EXISTS `factiongroup`;
 
 CREATE TABLE `factiongroup` (
-  `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `name` varchar(100) NOT NULL DEFAULT '',
+  `entry` mediumint(8) NOT NULL,
+  `name` text,
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 

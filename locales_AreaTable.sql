@@ -1,15 +1,15 @@
 DROP TABLE IF EXISTS `locales_areatable`;
 
 CREATE TABLE `locales_areatable` (
-  `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `areaname_loc1` varchar(100) NOT NULL DEFAULT '',
-  `areaname_loc2` varchar(100) NOT NULL DEFAULT '',
-  `areaname_loc3` varchar(100) NOT NULL DEFAULT '',
-  `areaname_loc4` varchar(100) NOT NULL DEFAULT '',
-  `areaname_loc5` varchar(100) NOT NULL DEFAULT '',
-  `areaname_loc6` varchar(100) NOT NULL DEFAULT '',
-  `areaname_loc7` varchar(100) NOT NULL DEFAULT '',
-  `areaname_loc8` varchar(100) NOT NULL DEFAULT '',
+  `entry` mediumint(8) NOT NULL,
+  `areaname_loc1` text,
+  `areaname_loc2` text,
+  `areaname_loc3` text,
+  `areaname_loc4` text,
+  `areaname_loc5` text,
+  `areaname_loc6` text,
+  `areaname_loc7` text,
+  `areaname_loc8` text,
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 

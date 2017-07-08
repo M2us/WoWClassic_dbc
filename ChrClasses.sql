@@ -1,8 +1,8 @@
 DROP TABLE IF EXISTS `chrclasses`;
 
 CREATE TABLE `chrclasses` (
-  `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `classname` varchar(100) NOT NULL DEFAULT '',
+  `entry` mediumint(8) NOT NULL,
+  `classname` text,
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 

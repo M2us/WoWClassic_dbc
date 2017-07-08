@@ -1,9 +1,9 @@
 DROP TABLE IF EXISTS `chatchannels`;
 
 CREATE TABLE `chatchannels` (
-  `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
-  `name` varchar(100) NOT NULL DEFAULT '',
-  `shortcutname` varchar(100) NOT NULL DEFAULT '',
+  `entry` mediumint(8) NOT NULL,
+  `name` text,
+  `shortcutname` text,
   PRIMARY KEY (`entry`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
