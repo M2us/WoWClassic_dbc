@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `locales_areapoi`;
 
 CREATE TABLE `locales_areapoi` (
-  `entry` mediumint(8) NOT NULL,
+  `areapoiid` mediumint(8) NOT NULL,
   `name_loc1` text,
   `name_loc2` text,
   `name_loc3` text,
@@ -18,10 +18,10 @@ CREATE TABLE `locales_areapoi` (
   `description_loc6` text,
   `description_loc7` text,
   `description_loc8` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`areapoiid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `locales_areapoi`(`entry`, `name_loc8`, `description_loc8`) VALUES 
+INSERT INTO `locales_areapoi`(`areapoiid`, `name_loc8`, `description_loc8`) VALUES 
 (792, 'Заоблачный пик', ''),
 (1032, 'Станция Альгаз', ''),
 (27, 'Крепость Ангор', ''),

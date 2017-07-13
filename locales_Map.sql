@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `locales_map`;
 
 CREATE TABLE `locales_map` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `mapname_loc1` text,
   `mapname_loc2` text,
   `mapname_loc3` text,
@@ -26,10 +26,10 @@ CREATE TABLE `locales_map` (
   `alliancedescription_loc6` text,
   `alliancedescription_loc7` text,
   `alliancedescription_loc8` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `locales_map`(`entry`, `mapname_loc8`, `hordedescription_loc8`, `alliancedescription_loc8`) VALUES 
+INSERT INTO `locales_map`(`id`, `mapname_loc8`, `hordedescription_loc8`, `alliancedescription_loc8`) VALUES 
 (0, 'Восточные королевства', '', ''),
 (1, 'Калимдор', '', ''),
 (13, 'Тестирование', '', ''),

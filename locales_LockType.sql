@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `locales_locktype`;
 
 CREATE TABLE `locales_locktype` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `name_loc1` text,
   `name_loc2` text,
   `name_loc3` text,
@@ -26,10 +26,10 @@ CREATE TABLE `locales_locktype` (
   `verb_loc6` text,
   `verb_loc7` text,
   `verb_loc8` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `locales_locktype`(`entry`, `name_loc8`, `resourcename_loc8`, `verb_loc8`) VALUES 
+INSERT INTO `locales_locktype`(`id`, `name_loc8`, `resourcename_loc8`, `verb_loc8`) VALUES 
 (1, 'Взлом замков', 'Запертые объекты', 'Взломать'),
 (2, 'Травничество', 'Травы', 'Собрать'),
 (3, 'Горное дело', 'Залежи руды', 'Добыть'),

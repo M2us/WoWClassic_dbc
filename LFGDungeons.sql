@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `lfgdungeons`;
 
 CREATE TABLE `lfgdungeons` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `name` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `lfgdungeons`(`entry`, `name`) VALUES 
+INSERT INTO `lfgdungeons`(`id`, `name`) VALUES 
 (1, 'Wailing Caverns'),
 (2, 'Scholomance'),
 (3, 'Ragefire Chasm'),

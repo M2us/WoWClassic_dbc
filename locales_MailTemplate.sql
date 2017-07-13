@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `locales_mailtemplate`;
 
 CREATE TABLE `locales_mailtemplate` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `messagebody_loc1` text,
   `messagebody_loc2` text,
   `messagebody_loc3` text,
@@ -10,10 +10,10 @@ CREATE TABLE `locales_mailtemplate` (
   `messagebody_loc6` text,
   `messagebody_loc7` text,
   `messagebody_loc8` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `locales_mailtemplate`(`entry`, `messagebody_loc8`) VALUES 
+INSERT INTO `locales_mailtemplate`(`id`, `messagebody_loc8`) VALUES 
 (83, 'Это тест.'),
 (84, 'Спасибо, что $gнавестил:навестила; меня $N. Приятно знать, что обо мне не забыли.'),
 (85, 'Спасибо, что $gнавестил:навестила; меня $N. Приятно знать, что обо мне не забыли.'),

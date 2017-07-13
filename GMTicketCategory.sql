@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `gmticketcategory`;
 
 CREATE TABLE `gmticketcategory` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `categoryname` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `gmticketcategory`(`entry`, `categoryname`) VALUES 
+INSERT INTO `gmticketcategory`(`id`, `categoryname`) VALUES 
 (1, 'Stuck'),
 (2, 'Behavior/Harassment'),
 (3, 'Guild'),

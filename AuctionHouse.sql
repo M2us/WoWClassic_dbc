@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `auctionhouse`;
 
 CREATE TABLE `auctionhouse` (
-  `entry` mediumint(8) NOT NULL,
+  `auctionhouseid` mediumint(8) NOT NULL,
   `name` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`auctionhouseid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `auctionhouse`(`entry`, `name`) VALUES 
+INSERT INTO `auctionhouse`(`auctionhouseid`, `name`) VALUES 
 (1, 'Stormwind Auction House'),
 (2, 'Alliance Auction House'),
 (3, 'Darnassus Auction House'),

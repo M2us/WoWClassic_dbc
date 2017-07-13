@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `petloyalty`;
 
 CREATE TABLE `petloyalty` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `name` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `petloyalty`(`entry`, `name`) VALUES 
+INSERT INTO `petloyalty`(`id`, `name`) VALUES 
 (1, '(Loyalty Level 1) Rebellious'),
 (2, '(Loyalty Level 2) Unruly'),
 (3, '(Loyalty Level 3) Submissive'),

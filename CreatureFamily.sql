@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `creaturefamily`;
 
 CREATE TABLE `creaturefamily` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `name` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `creaturefamily`(`entry`, `name`) VALUES 
+INSERT INTO `creaturefamily`(`id`, `name`) VALUES 
 (1, 'Wolf'),
 (2, 'Cat'),
 (3, 'Spider'),

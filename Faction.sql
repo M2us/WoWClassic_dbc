@@ -1,13 +1,13 @@
 DROP TABLE IF EXISTS `faction`;
 
 CREATE TABLE `faction` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `name` text,
   `description` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `faction`(`entry`, `name`, `description`) VALUES 
+INSERT INTO `faction`(`id`, `name`, `description`) VALUES 
 (1, 'PLAYER, Human', ''),
 (2, 'PLAYER, Orc', ''),
 (3, 'PLAYER, Dwarf', ''),

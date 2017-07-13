@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `areatable`;
 
 CREATE TABLE `areatable` (
-  `entry` mediumint(8) NOT NULL,
+  `areatableid` mediumint(8) NOT NULL,
   `areaname` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`areatableid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `areatable`(`entry`, `areaname`) VALUES 
+INSERT INTO `areatable`(`areatableid`, `areaname`) VALUES 
 (1, 'Dun Morogh'),
 (2, 'Longshore'),
 (3, 'Badlands'),

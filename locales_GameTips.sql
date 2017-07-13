@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `locales_gametips`;
 
 CREATE TABLE `locales_gametips` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `tip_loc1` text,
   `tip_loc2` text,
   `tip_loc3` text,
@@ -10,10 +10,10 @@ CREATE TABLE `locales_gametips` (
   `tip_loc6` text,
   `tip_loc7` text,
   `tip_loc8` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `locales_gametips`(`entry`, `tip_loc8`) VALUES 
+INSERT INTO `locales_gametips`(`id`, `tip_loc8`) VALUES 
 (396, '|cffffd100Совет:|r Желтыми точками на мини-карте обозначаются ближайшие персонажи, которые дали вам задание и теперь ждут вашего возвращения.'),
 (201, '|cffffd100Совет:|r Чтобы прервать заклинание, переместитесь, подпрыгните или нажмите клавишу Esc.'),
 (221, '|cffffd100Совет:|r Щелкнув по имени игрока в окне чата, вы сможете отправить личное сообщение этому игроку.'),

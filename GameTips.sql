@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `gametips`;
 
 CREATE TABLE `gametips` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `tip` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `gametips`(`entry`, `tip`) VALUES 
+INSERT INTO `gametips`(`id`, `tip`) VALUES 
 (396, '|cffffd100Tip:|r Nearby questgivers that are awaiting your return are shown as a yellow dot on your mini-map.'),
 (201, '|cffffd100Tip:|r Your spell casting can be cancelled by moving, jumping or hitting the escape key.'),
 (221, '|cffffd100Tip:|r Clicking on a player name in the chat window lets you send a private message to them.'),

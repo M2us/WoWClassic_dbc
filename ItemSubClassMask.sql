@@ -1,13 +1,13 @@
 DROP TABLE IF EXISTS `itemsubclassmask`;
 
 CREATE TABLE `itemsubclassmask` (
-  `entry` mediumint(8) NOT NULL,
   `classid` mediumint(8) NOT NULL,
+  `itemsubclassid` mediumint(11) NOT NULL,
   `name` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`classid`, `itemsubclassid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `itemsubclassmask`(`entry`, `classid`, `name`) VALUES 
-(1, 2, 'Melee Weapon'),
-(2, 4, 'Shield'),
-(3, 2, 'Ranged Weapon');
+INSERT INTO `itemsubclassmask`(`classid`, `itemsubclassid`, `name`) VALUES 
+(2, 0x2A5F3, 'Melee Weapon'),
+(4, 0x60, 'Shield'),
+(2, 0x4000C, 'Ranged Weapon');

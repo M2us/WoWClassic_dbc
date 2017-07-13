@@ -1,13 +1,13 @@
 DROP TABLE IF EXISTS `chatchannels`;
 
 CREATE TABLE `chatchannels` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `name` text,
   `shortcutname` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `chatchannels`(`entry`, `name`, `shortcutname`) VALUES 
+INSERT INTO `chatchannels`(`id`, `name`, `shortcutname`) VALUES 
 (1, 'General - %s', 'General'),
 (2, 'Trade - %s', 'Trade'),
 (22, 'LocalDefense - %s', 'LocalDefense'),

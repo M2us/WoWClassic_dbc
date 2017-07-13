@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `locales_emotestextdata`;
 
 CREATE TABLE `locales_emotestextdata` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `chattext_loc1` text,
   `chattext_loc2` text,
   `chattext_loc3` text,
@@ -10,10 +10,10 @@ CREATE TABLE `locales_emotestextdata` (
   `chattext_loc6` text,
   `chattext_loc7` text,
   `chattext_loc8` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `locales_emotestextdata`(`entry`, `chattext_loc8`) VALUES 
+INSERT INTO `locales_emotestextdata`(`id`, `chattext_loc8`) VALUES 
 (1, '%s соглашается с %s.'),
 (2, '%s соглашается с вами.'),
 (3, 'Вы соглашаетесь с %s.'),

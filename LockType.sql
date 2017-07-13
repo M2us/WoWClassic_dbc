@@ -1,14 +1,14 @@
 DROP TABLE IF EXISTS `locktype`;
 
 CREATE TABLE `locktype` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `name` text,
   `resourcename` text,
   `verb` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `locktype`(`entry`, `name`, `resourcename`, `verb`) VALUES 
+INSERT INTO `locktype`(`id`, `name`, `resourcename`, `verb`) VALUES 
 (1, 'Pick Lock', 'Locked Items', 'Pick'),
 (2, 'Herbalism', 'Herbs', 'Gather'),
 (3, 'Mining', 'Ore Deposits', 'Mine'),

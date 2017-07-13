@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `itembagfamily`;
 
 CREATE TABLE `itembagfamily` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `classname` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `itembagfamily`(`entry`, `classname`) VALUES 
+INSERT INTO `itembagfamily`(`id`, `classname`) VALUES 
 (0, 'NONE'),
 (1, 'Arrows'),
 (2, 'Bullets'),

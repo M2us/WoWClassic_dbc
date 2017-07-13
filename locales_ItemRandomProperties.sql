@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `locales_itemrandomproperties`;
 
 CREATE TABLE `locales_itemrandomproperties` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `suffix_loc1` text,
   `suffix_loc2` text,
   `suffix_loc3` text,
@@ -10,10 +10,10 @@ CREATE TABLE `locales_itemrandomproperties` (
   `suffix_loc6` text,
   `suffix_loc7` text,
   `suffix_loc8` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `locales_itemrandomproperties`(`entry`, `suffix_loc8`) VALUES 
+INSERT INTO `locales_itemrandomproperties`(`id`, `suffix_loc8`) VALUES 
 (5, 'с печатью интеллекта'),
 (6, 'с печатью силы'),
 (14, 'с символом ловкости'),

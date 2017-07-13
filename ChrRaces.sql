@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `chrraces`;
 
 CREATE TABLE `chrraces` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `name` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `chrraces`(`entry`, `name`) VALUES 
+INSERT INTO `chrraces`(`id`, `name`) VALUES 
 (1, 'Human'),
 (2, 'Orc'),
 (3, 'Dwarf'),

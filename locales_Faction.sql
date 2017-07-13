@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `locales_faction`;
 
 CREATE TABLE `locales_faction` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `name_loc1` text,
   `name_loc2` text,
   `name_loc3` text,
@@ -18,10 +18,10 @@ CREATE TABLE `locales_faction` (
   `description_loc6` text,
   `description_loc7` text,
   `description_loc8` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `locales_faction`(`entry`, `name_loc8`, `description_loc8`) VALUES 
+INSERT INTO `locales_faction`(`id`, `name_loc8`, `description_loc8`) VALUES 
 (1, 'ИГРОК: человек', ''),
 (2, 'ИГРОК: орк', ''),
 (3, 'ИГРОК: дворф', ''),

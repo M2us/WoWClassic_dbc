@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `locales_languages`;
 
 CREATE TABLE `locales_languages` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `name_loc1` text,
   `name_loc2` text,
   `name_loc3` text,
@@ -10,10 +10,10 @@ CREATE TABLE `locales_languages` (
   `name_loc6` text,
   `name_loc7` text,
   `name_loc8` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `locales_languages`(`entry`, `name_loc8`) VALUES 
+INSERT INTO `locales_languages`(`id`, `name_loc8`) VALUES 
 (1, 'орочий'),
 (2, 'дарнасский'),
 (3, 'таурахэ'),

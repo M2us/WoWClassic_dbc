@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `locales_itemclass`;
 
 CREATE TABLE `locales_itemclass` (
-  `entry` mediumint(8) NOT NULL,
+  `classid` mediumint(8) NOT NULL,
   `classname_loc1` text,
   `classname_loc2` text,
   `classname_loc3` text,
@@ -10,10 +10,10 @@ CREATE TABLE `locales_itemclass` (
   `classname_loc6` text,
   `classname_loc7` text,
   `classname_loc8` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`classid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `locales_itemclass`(`entry`, `classname_loc8`) VALUES 
+INSERT INTO `locales_itemclass`(`classid`, `classname_loc8`) VALUES 
 (0, 'Расходуемые'),
 (1, 'Сумки'),
 (2, 'Оружие'),

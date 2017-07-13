@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `locales_chatchannels`;
 
 CREATE TABLE `locales_chatchannels` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `name_loc1` text,
   `name_loc2` text,
   `name_loc3` text,
@@ -18,10 +18,10 @@ CREATE TABLE `locales_chatchannels` (
   `shortcutname_loc6` text,
   `shortcutname_loc7` text,
   `shortcutname_loc8` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `locales_chatchannels`(`entry`, `name_loc8`, `shortcutname_loc8`) VALUES 
+INSERT INTO `locales_chatchannels`(`id`, `name_loc8`, `shortcutname_loc8`) VALUES 
 (1, 'Общий: %s', 'Общий'),
 (2, 'Торговля: %s', 'Торговля'),
 (22, 'Оборона: %s', 'ОборонаЛокальный'),

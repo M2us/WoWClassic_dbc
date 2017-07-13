@@ -1,14 +1,14 @@
 DROP TABLE IF EXISTS `map`;
 
 CREATE TABLE `map` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `mapname` text,
   `hordedescription` text,
   `alliancedescription` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `map`(`entry`, `mapname`, `hordedescription`, `alliancedescription`) VALUES 
+INSERT INTO `map`(`id`, `mapname`, `hordedescription`, `alliancedescription`) VALUES 
 (0, 'Eastern Kingdoms', '', ''),
 (1, 'Kalimdor', '', ''),
 (13, 'Testing', '', ''),

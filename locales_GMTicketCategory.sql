@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `locales_gmticketcategory`;
 
 CREATE TABLE `locales_gmticketcategory` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `categoryname_loc1` text,
   `categoryname_loc2` text,
   `categoryname_loc3` text,
@@ -10,10 +10,10 @@ CREATE TABLE `locales_gmticketcategory` (
   `categoryname_loc6` text,
   `categoryname_loc7` text,
   `categoryname_loc8` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `locales_gmticketcategory`(`entry`, `categoryname_loc8`) VALUES 
+INSERT INTO `locales_gmticketcategory`(`id`, `categoryname_loc8`) VALUES 
 (1, 'Застревание персонажа'),
 (2, 'Оскорбление или некорректное поведение'),
 (3, 'Проблемы с гильдией'),

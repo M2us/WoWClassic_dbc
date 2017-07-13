@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `gmsurveyquestions`;
 
 CREATE TABLE `gmsurveyquestions` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `question` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `gmsurveyquestions`(`entry`, `question`) VALUES 
+INSERT INTO `gmsurveyquestions`(`id`, `question`) VALUES 
 (28, 'Did the GM provide an appropriate answer or solution to your question/problem?'),
 (29, 'How easy was it to understand and/or follow the information provided?'),
 (30, 'Was the GM knowledgeable, respectful, and empathetic during your interactions?'),

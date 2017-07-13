@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `mailtemplate`;
 
 CREATE TABLE `mailtemplate` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `messagebody` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `mailtemplate`(`entry`, `messagebody`) VALUES 
+INSERT INTO `mailtemplate`(`id`, `messagebody`) VALUES 
 (83, 'this is a test'),
 (84, 'Thank you for visiting me, $N. It makes me happy to know we are not forgotten.'),
 (85, 'Thank you for visiting me, $N. It makes me happy to know we are not forgotten.'),

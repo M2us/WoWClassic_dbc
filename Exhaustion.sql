@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `exhaustion`;
 
 CREATE TABLE `exhaustion` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `name` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `exhaustion`(`entry`, `name`) VALUES 
+INSERT INTO `exhaustion`(`id`, `name`) VALUES 
 (1, 'Rested'),
 (2, 'Normal'),
 (3, 'XXXTired'),

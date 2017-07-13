@@ -1,13 +1,13 @@
 DROP TABLE IF EXISTS `areapoi`;
 
 CREATE TABLE `areapoi` (
-  `entry` mediumint(8) NOT NULL,
+  `areapoiid` mediumint(8) NOT NULL,
   `name` text,
   `description` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`areapoiid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `areapoi`(`entry`, `name`, `description`) VALUES 
+INSERT INTO `areapoi`(`areapoiid`, `name`, `description`) VALUES 
 (792, 'Aerie Peak', ''),
 (1032, 'Algaz Station', ''),
 (27, 'Angor Fortress', ''),

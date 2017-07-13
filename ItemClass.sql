@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `itemclass`;
 
 CREATE TABLE `itemclass` (
-  `entry` mediumint(8) NOT NULL,
+  `classid` mediumint(8) NOT NULL,
   `classname` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`classid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `itemclass`(`entry`, `classname`) VALUES 
+INSERT INTO `itemclass`(`classid`, `classname`) VALUES 
 (0, 'Consumable'),
 (1, 'Container'),
 (2, 'Weapon'),

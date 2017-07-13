@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `languages`;
 
 CREATE TABLE `languages` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `name` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `languages`(`entry`, `name`) VALUES 
+INSERT INTO `languages`(`id`, `name`) VALUES 
 (1, 'Orcish'),
 (2, 'Darnassian'),
 (3, 'Taurahe'),

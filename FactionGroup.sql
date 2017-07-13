@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `factiongroup`;
 
 CREATE TABLE `factiongroup` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `name` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `factiongroup`(`entry`, `name`) VALUES 
+INSERT INTO `factiongroup`(`id`, `name`) VALUES 
 (1, ''),
 (2, 'Alliance'),
 (3, 'Horde'),

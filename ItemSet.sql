@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `itemset`;
 
 CREATE TABLE `itemset` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `name` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `itemset`(`entry`, `name`) VALUES 
+INSERT INTO `itemset`(`id`, `name`) VALUES 
 (1, 'The Gladiator'),
 (41, 'Dal\'Rend\'s Arms'),
 (65, 'Spider\'s Kiss'),

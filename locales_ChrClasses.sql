@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `locales_chrclasses`;
 
 CREATE TABLE `locales_chrclasses` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `classname_loc1` text,
   `classname_loc2` text,
   `classname_loc3` text,
@@ -10,10 +10,10 @@ CREATE TABLE `locales_chrclasses` (
   `classname_loc6` text,
   `classname_loc7` text,
   `classname_loc8` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `locales_chrclasses`(`entry`, `classname_loc8`) VALUES 
+INSERT INTO `locales_chrclasses`(`id`, `classname_loc8`) VALUES 
 (1, 'Воин'),
 (2, 'Паладин'),
 (3, 'Охотник'),

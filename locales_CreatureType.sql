@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `locales_creaturetype`;
 
 CREATE TABLE `locales_creaturetype` (
-  `entry` mediumint(8) NOT NULL,
+  `creaturetypeid` mediumint(8) NOT NULL,
   `name_loc1` text,
   `name_loc2` text,
   `name_loc3` text,
@@ -10,10 +10,10 @@ CREATE TABLE `locales_creaturetype` (
   `name_loc6` text,
   `name_loc7` text,
   `name_loc8` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`creaturetypeid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `locales_creaturetype`(`entry`, `name_loc8`) VALUES 
+INSERT INTO `locales_creaturetype`(`creaturetypeid`, `name_loc8`) VALUES 
 (1, 'Животное'),
 (2, 'Дракон'),
 (3, 'Демон'),

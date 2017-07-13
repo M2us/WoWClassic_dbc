@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `chrclasses`;
 
 CREATE TABLE `chrclasses` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `classname` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `chrclasses`(`entry`, `classname`) VALUES 
+INSERT INTO `chrclasses`(`id`, `classname`) VALUES 
 (1, 'Warrior'),
 (2, 'Paladin'),
 (3, 'Hunter'),

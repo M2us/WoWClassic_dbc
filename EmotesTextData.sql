@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `emotestextdata`;
 
 CREATE TABLE `emotestextdata` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `chattext` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `emotestextdata`(`entry`, `chattext`) VALUES 
+INSERT INTO `emotestextdata`(`id`, `chattext`) VALUES 
 (1, '%s agrees with %s.'),
 (2, '%s agrees with you.'),
 (3, 'You agree with %s.'),

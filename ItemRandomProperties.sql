@@ -1,12 +1,12 @@
 DROP TABLE IF EXISTS `itemrandomproperties`;
 
 CREATE TABLE `itemrandomproperties` (
-  `entry` mediumint(8) NOT NULL,
+  `id` mediumint(8) NOT NULL,
   `suffix` text,
-  PRIMARY KEY (`entry`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT INTO `itemrandomproperties`(`entry`, `suffix`) VALUES 
+INSERT INTO `itemrandomproperties`(`id`, `suffix`) VALUES 
 (5, 'of Intellect'),
 (6, 'of Strength'),
 (14, 'of Agility'),
